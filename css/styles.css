@@ -1,0 +1,149 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;700&family=Lato:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    /*font-family*/
+    font-family: 'Alkatra', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+    color: #0f0f0f;
+    font-size: 18px;
+
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+body{
+    background-color:#fbfbfb;
+    width: 100%;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enlaces a {
+    margin-right: 6vw;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    margin: 2vh 5vw;
+    padding: 1vh 1vw;
+}
+
+h1,h2 {
+    text-align: center;
+    margin: 1vh 2vh;
+    padding: 1.5vh 1vw;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#redondeada {
+    width: 25vw;
+    max-width: 200px;
+    min-width: 180px;
+    height: 30vh;
+    max-height: 200px;
+    min-height: 180px;
+    border-radius:50%;
+    border:1vw none black;
+}
+
+.iconos{
+    margin-top: 6vh;
+}
+
+.iconos img {
+    width:15vw;
+    max-width: 80px;
+    height: 12vh;
+    max-height: 80px;
+    margin-right: 6vw;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-contacto {
+    width: 90%;
+    height: 90%;
+    background-color:rgba(175, 89, 158, 0.3);
+    border-radius:20px;
+    border:1vw none black;
+}
+
+#descargar-cv {
+    background-color: #af599e;
+    width: 40%;
+    max-width: 300px;
+    height: 6vh;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 3vh;
+}
+
+
+footer{
+    background-color: #af599e;
+    width: 100%;
+    height: 100%;
+}
+
+#parrafo-footer {
+    color: white;
+    text-align: center;
+}
