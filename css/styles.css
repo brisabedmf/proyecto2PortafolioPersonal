@@ -30,6 +30,10 @@ a {
     color: inherit;
 }
 
+.enlaces a:hover {
+    color: #F7CACD; /* Nuevo color al hacer hover */
+}
+
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
