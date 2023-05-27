@@ -58,6 +58,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 
 .enlaces a {
@@ -160,7 +161,7 @@ section {
 
 
 footer{
-    background-color: #64113F; /*#af599e;*/
+    background-color: #64113F;
     width: 100%;
     height: 8vh;
     display: flex;
@@ -173,9 +174,17 @@ footer{
     text-align: center;
 }
 
+button {
+    background-color: #64113F;
+    border: 0;
+    margin-right: 2vw;
+}
 
+button img {
+    height: 6vh;
+}
 
-/* desktop */
+/* Desktop */
 @media (min-width: 1024px) {
 
     * {
