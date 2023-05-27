@@ -110,7 +110,7 @@ section {
     height: 30vh;
     max-width: 1000px;
     min-width: 180px;
-    max-height: 500px;
+    max-height: 300px;
     min-height: 180px;
     border-radius:50%;
     border:1vw none black;
@@ -180,15 +180,6 @@ footer{
     text-align: center;
 }
 
-button {
-    background-color: #64113F;
-    border: 0;
-    margin-right: 2vw;
-}
-
-button img {
-    height: 6vh;
-}
 
 /* Desktop */
 @media (min-width: 1024px) {
