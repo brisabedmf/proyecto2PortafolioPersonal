@@ -75,6 +75,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 5vh;
 }
 
@@ -105,12 +106,20 @@ section {
     min-height: 100vh;
 }
 
+#logo-eidos {
+    width: 15vw;
+    height: 18vh;
+    margin-top: 1vh;
+    padding: 1vh 1vw;
+    min-width: 120px;
+}
+
 #redondeada {
-    width: 25vw;
-    height: 30vh;
+    width: 20vw;
+    height: 25vh;
     max-width: 1000px;
     min-width: 180px;
-    max-height: 200px;
+    max-height: 350px;
     min-height: 180px;
     border-radius:50%;
     border:1vw none black;
@@ -126,10 +135,10 @@ section {
 }
 
 .iconos img {
-    width:15vw;
+    width: 15vw;
     max-width: 70px;
     min-width: 60px;
-    height: 8vh;
+    height: 10vh;
     max-height: 80px;
     min-height: 60px;
     margin-right: 6vw;
@@ -221,9 +230,21 @@ footer{
     section {
         min-height: 90vh;
     }
+}
+
+/*Ajustes para la imagen redondeada*/
+@media (min-width: 1024px) and (max-width:1399px) {
 
     #redondeada {
-        width: 65vw;
-        height: 50vh;
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 1400px){
+
+    #redondeada {
+        width: 40vw;
+        height: 60vh;
     }
 }
