@@ -31,7 +31,8 @@ a {
 }
 
 .enlaces a:hover,
-.enlaces a.active{
+.enlaces a.active,
+#descargar-cv:hover{
     color: #F7CACD; /* Nuevo color al hacer hover */
 }
 
@@ -42,7 +43,7 @@ a {
 body{
     background-color:#f7cacd;
     width: 100%;
-    padding-top: 6vh;
+    padding-top: 1vh;
 }
 
 main {
@@ -92,8 +93,8 @@ header {
 }
 
 p {
-    text-align: justify;
-    margin: 2vh 5vw;
+    text-align: center;
+    margin: 1vh 5vw;
     padding: 1vh 1vw;
 }
 
@@ -102,6 +103,21 @@ h1,h2 {
     margin: 1vh 2vh;
     padding: 1.5vh 1vw;
 }
+
+
+#descricion-cv p {
+    margin: 0.1vh 5vw;
+    padding: 0.1vh 1vw;
+}
+
+#descripcion-cv h2 {
+    margin-top: 1vh;
+    margin-bottom: 0.1vh;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    padding: 0vh 1vw;
+}
+
 
 h2 {
     font-size: 24px;
@@ -143,7 +159,7 @@ section {
     width: 15vw;
     max-width: 70px;
     min-width: 60px;
-    height: 9vh;
+    height: 7vh;
     max-height: 80px;
     min-height: 60px;
     margin-right: 6vw;
@@ -175,10 +191,9 @@ section {
     align-items: center;
     justify-content: center;
     color: white;
-    margin-top: 3vh;
+    margin-top: 0.7vh;
     font-weight: 500;
 }
-
 
 footer{
     background-color: #64113F;
@@ -210,6 +225,10 @@ footer{
         font-size: 32px;
     }
 
+    p {
+        text-align: justify;
+    }
+
     #inicio {
         flex-direction: row;
         justify-content: center;
@@ -218,12 +237,11 @@ footer{
     }
 
     #descripcion-cv {
-        justify-content:flex-start;
+        justify-content:center;
         align-items: flex-start;
     }
 
     #descripcion-cv p {
-        text-align: justify;
         margin: 1vh 2vh;
         padding: 1.5vh 1vw;
     }
@@ -232,9 +250,10 @@ footer{
         margin: 1vh 3vh;
     }
 
-    section {
-        min-height: 90vh;
+    .iconos img {
+        height: 9vh;
     }
+
 }
 
 /*Ajustes para la imagen redondeada*/
