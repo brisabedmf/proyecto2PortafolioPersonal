@@ -118,6 +118,9 @@ h1,h2 {
     padding: 0vh 1vw;
 }
 
+#info-contacto p {
+    padding-bottom: 2vh;
+}
 
 h2 {
     font-size: 24px;
@@ -159,7 +162,7 @@ section {
     width: 15vw;
     max-width: 70px;
     min-width: 60px;
-    height: 7vh;
+    height: 8vh;
     max-height: 80px;
     min-height: 60px;
     margin-right: 6vw;
@@ -251,12 +254,14 @@ footer{
     }
 
     .iconos img {
-        height: 9vh;
+        height: 9.5vh;
     }
 
     .info-contacto{
         margin-top: 6vh;
+        height: 30vh;
     }
+
 }
 
 /*Ajustes para la imagen redondeada*/
