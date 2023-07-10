@@ -204,7 +204,7 @@ footer{
     width: 100%;
     height: 8vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -212,7 +212,6 @@ footer{
     color: white;
     text-align: center;
 }
-
 
 /* Desktop */
 @media (min-width: 1024px) {
