@@ -26,7 +26,7 @@
     
                 <li>
                     <a href="#contacto">Contacto</a>
-                </li>  
+                </li> 
                          
             </ul>
         </nav>
@@ -49,11 +49,12 @@
                     responsive atractivas, usables y accesibles.
                 </p>
 
-                <a id="descargar-cv" href="./archivos/CV Brisabed Marchan.pdf" target="_blank">Descargar mi Cv</a>
+                <a class="descargar-cv" href="./archivos/CV Brisabed Marchan.pdf" target="_blank">Descargar mi Cv</a>
 
             </div>
 
         </section>
+
 
         <section id="contacto">
 
@@ -76,6 +77,32 @@
                 <a href="https://www.linkedin.com/in/brisabed-marchan" target="_blank"><img src="./img/linkedin.png"></a>
 
             </div>
+
+            <div>
+                <a id="boton-desplegar-formulario" class="descargar-cv" href="#section-consultas" onclick="cambiarDisplayForm('block')">Dejar consulta</a>
+            </div>
+
+        </section>
+
+
+        <section class="form-consulta" id="section-consultas">
+
+            <h1>Consulta</h1>
+
+            <form>
+
+                <label for="nombre-apellido">Nombre y Apellido:</label>
+                <input type="text" id="nombre-apellido" name="nombre-apellido" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Debe tener como maximo 1500 caracteres." required></textarea>
+                
+                <button type="submit" id="boton-enviar" onclick="validarConsulta()">Enviar</button>
+
+            </form>
 
         </section>
 

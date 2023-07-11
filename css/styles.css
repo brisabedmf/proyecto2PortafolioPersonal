@@ -32,7 +32,8 @@ a {
 
 .enlaces a:hover,
 .enlaces a.active,
-#descargar-cv:hover{
+.descargar-cv:hover,
+button:hover {
     color: #F7CACD; /* Nuevo color al hacer hover */
 }
 
@@ -126,6 +127,10 @@ h2 {
     font-size: 24px;
 }
 
+h1 {
+    font-size: 28px;
+}
+
 section {
     min-height: 100vh;
 }
@@ -184,19 +189,20 @@ section {
     border:1vw none black;
 }
 
-#descargar-cv {
+.descargar-cv {
     background-color: #de4d86;
     width: 40%;
     max-width: 300px;
     min-width: 220px;
     height: 6vh;
-    border-radius: 60px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     margin-top: 0.7vh;
     font-weight: 500;
+    margin-left: 2vw;
 }
 
 footer{
@@ -212,6 +218,56 @@ footer{
     color: white;
     text-align: center;
 }
+
+#boton-desplegar-formulario {
+    margin-top: 3vh;
+    margin-left: 0;
+    width: 46vw;
+    max-width: 400px;
+}
+
+/*Formulario de consultas*/
+#section-consultas{
+    display: none;
+}
+
+.form-consulta {
+    max-width: 900px;
+    margin-top: 70vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 20vh 5vw;
+    border-radius: 5px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#boton-enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: #de4d86;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+
 
 /* Desktop */
 @media (min-width: 1024px) {
